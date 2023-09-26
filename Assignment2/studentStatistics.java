@@ -1,9 +1,9 @@
-
+ 
 /**
  * Write a description of class studentStatistics here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (B.A. Gayashan Madhuka)
+ * @version (1.0.6 2023/09/26)
  */
 public class studentStatistics
 {
@@ -15,19 +15,8 @@ public class studentStatistics
      */
     public studentStatistics()
     {
-        // initialise instance variables
-        x = 0;
+       
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+   
 }
