@@ -99,5 +99,14 @@ public class StudentStatistics {
             e.printStackTrace();
         }
     }
+// Calculate and display total marks for each student
+    private static void calculateTotalMarks() {
+        System.out.println("These are the students and their total marks:");
+        for (Student student : students) {
+            System.out.println(student.studentLastName + ", " + student.studentFirstName + " (" + student.studentID + "): "
+                    + "Assignment 1: " + student.assignmentNo1 + ", Assignment 2: " + student.assignmentNo2
+                    + ", Assignment 3: " + student.assignmentNo3 + ", Total Mark: " + student.studentTotalMark);
+        }
+    }
 
 }
