@@ -64,4 +64,13 @@ public class StudentStatistics {
             }
         }
     }
+     // Declaring the options in Menu
+    private static void showMenu() {
+        System.out.println("Show Menu:");
+        System.out.println("01. Calculating total marks for each of the student");
+        System.out.println("02. Display students who has total marks less than a threshold");
+        System.out.println("03. Display top 5 students with lowest and highest total marks");
+        System.out.println("04. Exit");
+        System.out.print("Please enter your choice here: ");
+    }
 }
