@@ -7,7 +7,11 @@
  */
 import java.io.BufferedReader;
 import java.io.FileReader;
-
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Scanner;
 
 class Student {
     String studentLastName; 
@@ -29,4 +33,8 @@ class Student {
         this.assignmentNo3 = assignmentNo3;
         this.studentTotalMark = assignmentNo1 + assignmentNo2 + assignmentNo3;
     }
+}
+public class StudentStatistics {
+
+    private static String FILENAME = "prog5001_students_grade_2022.txt"; //declareing the details sheet
 }
