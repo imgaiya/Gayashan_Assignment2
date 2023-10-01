@@ -36,5 +36,5 @@ class Student {
 }
 public class StudentStatistics {
 
-    private static String FILENAME = "prog5001_students_grade_2022.txt"; //declareing the details sheet
+    private static final String FILENAME = "prog5001_students_grade_2022.txt"; //declareing the details sheet
 }
