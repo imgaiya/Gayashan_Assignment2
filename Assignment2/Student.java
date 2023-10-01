@@ -9,4 +9,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 
-
+class Student {
+    String studentLastName; 
+    String studentFirstName; 
+    int studentID;
+    double assignmentNo1; 
+    double assignmentNo2; 
+    double assignmentNo3; 
+    double studentTotalMark;
+}
