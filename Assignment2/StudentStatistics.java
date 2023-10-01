@@ -78,4 +78,26 @@ public class StudentStatistics {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();
     }
+ // Get the information about students by using the dats sheet
+    private static void readFromFile(String fileName) {
+        try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                if (!line.startsWith("Unit:") && !line.isEmpty()) {
+                   
+                    String[] parts = line.split("\t");
+                    String studentLastName = parts[0]; 
+                    String studentFirstName = parts[1]; 
+                    int studentID = Integer.parseInt(parts[2]);
+                    double assignmentNo1 = parts.length > 3 ? Double.parseDouble(parts[3]) : 0.0; 
+                    double assignmentNo2 = parts.length > 4 ? Double.parseDouble(parts[4]) : 0.0; 
+                    double assignmentNo3 = parts.length > 5 ? Double.parseDouble(parts[5]) : 0.0; 
+                    students.add(new Student(studentLastName, studentFirstName, studentID, assignmentNo1, assignmentNo2, assignmentNo3));
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
