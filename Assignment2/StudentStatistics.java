@@ -36,7 +36,7 @@ class Student {
 }
 public class StudentStatistics {
 
-    private static final String FILENAME = "prog5001_students_grade_2022.txt"; //declareing the details sheet
+    private static final String FILENAME = "prog5001_students_grade_2022.csc"; //declareing the details sheet
     private static ArrayList<Student> students = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -72,5 +72,10 @@ public class StudentStatistics {
         System.out.println("03. Display top 5 students with lowest and highest total marks");
         System.out.println("04. Exit");
         System.out.print("Please enter your choice here: ");
+    }
+     //Choosing the user's choice
+    private static int getUserChoice() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
     }
 }
