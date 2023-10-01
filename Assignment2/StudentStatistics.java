@@ -108,5 +108,18 @@ public class StudentStatistics {
                     + ", Assignment 3: " + student.assignmentNo3 + ", Total Mark: " + student.studentTotalMark);
         }
     }
+// Display students who has total marks below a given threshold
+    private static void printStudentsBelowThreshold() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter the threshold here: ");
+        double threshold = scanner.nextDouble();
 
+        System.out.println("This is the List of students who's total marks below " + threshold + ":");
+        for (Student student : students) {
+            if (student.studentTotalMark < threshold) {
+                System.out.println(student.studentLastName + ", " + student.studentFirstName + " (" + student.studentID + "): "
+                        + "The total Mark of the student is: " + student.studentTotalMark);
+            }
+        }
+    }
 }
