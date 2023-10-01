@@ -37,4 +37,31 @@ class Student {
 public class StudentStatistics {
 
     private static final String FILENAME = "prog5001_students_grade_2022.txt"; //declareing the details sheet
+    private static ArrayList<Student> students = new ArrayList<>();
+
+    public static void main(String[] args) {
+        readFromFile(FILENAME);
+        // Declaring possible cases
+        while (true) {
+            showMenu();
+            int choice = getUserChoice();
+
+            switch (choice) {
+                case 1:
+                    calculateTotalMarks();
+                    break;
+                case 2:
+                    printStudentsBelowThreshold();
+                    break;
+                case 3:
+                    printTopAndBottomStudents();
+                    break;
+                case 4:
+                    System.out.println("The program is already Exist");
+                    System.exit(0);
+                default:
+                    System.out.println("The choice is invalid. Please enter a valid option.");
+            }
+        }
+    }
 }
