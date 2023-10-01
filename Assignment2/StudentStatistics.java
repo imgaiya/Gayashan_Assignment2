@@ -1,6 +1,8 @@
  
 /**
- * Write a description of class studentStatistics here.
+ * The Java program was developed to manage and evaluate student ratings for a unit on programming fundamentals. 
+   It extracts student data from a file, calculates marks, provides features to list students who achieved below a 
+   certain point, and identifies the top and lowest five performers. The application has a simple menu structure..
  *
  * @author (B.A. Gayashan Madhuka)
  * @version (1.0.6 2023/09/26)
