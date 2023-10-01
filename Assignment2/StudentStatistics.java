@@ -122,4 +122,6 @@ public class StudentStatistics {
             }
         }
     }
-}
+// Display highest and lowest total marks of the top 5 studets
+    private static void printTopAndBottomStudents() {
+}}
